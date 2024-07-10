@@ -87,9 +87,9 @@ function btncheck(idx) {
 
 
 function gamereset() {
-    let started = false;
-    let gameseq = [];
-    let userseq = [];
-    let level = 0;
-    // h3.innerText ='press any key to start'
+    started = false;
+    gameseq = [];
+    userseq = [];
+    level = 0;
+    h3.innerText = 'Game Over! press any key to start';
 }

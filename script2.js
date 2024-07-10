@@ -3,6 +3,7 @@ let userseq = [];
 let started = false;
 let level = 0;
 let h3 = document.querySelector('h3');
+let body = document.querySelector('body');
 let allbtnclr = ['red', 'green', 'orange', 'black'];
 
 
@@ -81,8 +82,12 @@ function btncheck(idx) {
         }
     } else {
         h3.innerText = 'Game Over!';
+        body.classList.add('document-clr');
+        setTimeout(() => {
+            body.classList.remove('document-clr');
+        }, 1000);
         gamereset();
-    }
+    }    
 }
 
 
@@ -91,5 +96,5 @@ function gamereset() {
     gameseq = [];
     userseq = [];
     level = 0;
-    h3.innerText = 'Game Over! press any key to start';
-}
+    h3.innerText = 'Game Over! press any key to start'
+    };
